@@ -8,4 +8,4 @@ while password != "secret":
     if password == "secret":
         print("You now have access to the system.")
     else:
-        print("Sorry the value entered the incorrect passwork - please try again")
+        print("Sorry the value entered the incorrect password - please try again")

@@ -4,7 +4,7 @@
 
 number = int(input("Please enter a number:"))
 
-result = int(input("0"))
+result = intinput((0))
 
 answer == number + result
 
