@@ -4,6 +4,10 @@
 
 message = input("Please enter the message that you would like to have repeated.") 
 repeats = int(input("How many times would you like your message to be repeated?"))
-for counter in range(repeats): 
-    print(message)
+if repeats > 0:
+    for counter in range(repeats): 
+        print(message)
+elif repeats < 0:
+    print("You have entered an invalid value.")
+    
 
