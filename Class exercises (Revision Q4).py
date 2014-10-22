@@ -7,4 +7,5 @@ while not answer:
     number = int(input("Enter a number in the range 10 to 20:"))
     if 10 <= number <= 20:
         answer = True
+        print("You have entered a number within the range.")
 
