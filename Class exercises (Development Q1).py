@@ -1,6 +1,6 @@
 #Michelle Yick
 #05-11-2014
-#Iteration class exercises.Development Q1.
+#Iteration class exercises. Development Q1.
 
 total = 1
 n = int(input("What number would you like to work out the factorial of?"))
