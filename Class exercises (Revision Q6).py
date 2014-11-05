@@ -6,6 +6,6 @@ total = 2.2
 
 for pounds in range(1,21):
                 answer = pounds / total
-                print("{0: < 1} / {1} = {2}kg".format(pounds,total,answer))
+                print("{0: < 2} / {1} = {2:.2f}kg".format(pounds,total,answer))
 
 
