@@ -2,25 +2,24 @@
 #10-11-2014
 #Guess the number game.
 
-count = 0
-
 import random
 number = random.randint(1,100)
 
-guess = int (input("Enter a number as your guess"))
+count=0
 
-while guess != number:
-    guess = int (input("Enter a number as your guess"))
-    if guess < 1 and guess > 100 or guess == 1 or guess == 100:
-        if guess < number:
-            print("Your value is too low")
-            count + 1
-        elif guess > number:
-            print("Your guess is too high")
+valid = False
 
-    elif guess > 100 or guess < 1:
-        print("Invalid value")
-
-    elif guess == number:
-        print("Congrats, you guessed the correct number. You took {0} times to guess the number".format(count))
-        
+while not valid:
+    guess=int(input("Please enter a guess between 1 to 100:"))
+    if guess == number:
+        count = count+1
+        valid = True
+        print("You guessed the number! It was {0}, it took you {1} tries.".format(number,count))
+    elif 0 <= guess < number:
+        count = count+1
+        print("Your guess is too low, please try again.")
+    elif number <= guess < 100:
+        count = count+1
+        print("Your guess is too high, please try again.")
+    else:
+        print("You entered a number out of range, please enter a nubmer inbetween 1-100.")
